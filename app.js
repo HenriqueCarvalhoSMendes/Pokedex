@@ -18,7 +18,7 @@ const fetchPokemon = () => {
 
                 accumulator += `
                 <li class="card ${types[0]}">
-                <img class="card-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"/>
+                <img class="card-image turn" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"/>
                     <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
                     <p class="card-subtitle"> ${types.join(' | ')}</p>
                 </li>` 
@@ -34,4 +34,18 @@ const fetchPokemon = () => {
         })
 }
 
+const img = document.getElementsByClassName('turn')
+
 fetchPokemon();
+
+function mouseEmCima(img) {
+   
+    img.src="figura1.jpg";
+    
+    }
+    
+ function mouseFora(img) {
+    
+    turn.src="figura2.jpg";
+    
+    }
